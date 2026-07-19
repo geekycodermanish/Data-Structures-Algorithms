@@ -143,11 +143,142 @@
 
 
 
-for(let outer = 0; outer < 5; outer++){
-    for(let inner = outer; inner > 0; inner--){
-      console.log("inner....", outer, inner)
-      console.log('--------------------------------')
-      // console.log("*")
+// *****
+// *****
+// *****
+// *****
+// *****
+
+  // function check(n) {
+  //   if(!n) return console.log("N Number Empty Not Alow...");
+  //   for(let outer = 0; outer < n; outer++){
+  //       let row = "";
+  //       for(let inner = 0; inner < n; inner++){
+  //         row = row + "*"
+  //       }
+  //       console.log(row)
+  //   }
+  // }
+  
+
+  // check(5)
+
+
+
+
+// *
+// **
+// ***
+// ****
+// *****
+// ******
+
+
+  //   function check(n) {
+  //   if(!n && typeof x == "String") return console.log("N Is Not Correct...");
+
+  //   for(let outer = 0; outer <= n; outer++){
+  //       let row = "";
+  //       for(let inner = 0; inner <= outer; inner++){
+  //         row = row + "*"
+  //       }
+  //       console.log(row)
+  //   }
+  // }
+  
+
+  // check("5")
+
+
+
+
+
+// *****
+// ****
+// ***
+// **
+// *
+
+  // function check(n) {
+  //   // if(!n && typeof x == "String") return console.log("N Is Not Correct...");
+
+  //   for(let outer = n; outer > 0; outer--){
+  //       let row = "";
+  //       for(let inner = 0; inner < outer; inner++){
+  //         row = row + "*"
+  //       }
+  //       console.log(row)
+  //   }
+  // }
+  
+
+  // check(5)
+
+
+
+// 12345
+// 1234
+// 123
+// 12
+// 1
+
+
+//     function check(n) {
+//     // if(!n && typeof x == "String") return console.log("N Is Not Correct...");
+
+//     for(let outer = n; outer > 0; outer--){
+//         let row = "";
+//         for(let inner = 0; inner < outer; inner++){
+//           row = row + (inner + 1)
+//         }
+//         console.log(row)
+//     }
+//   }
+  
+
+//   check(5)
+
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+//     function check(n) {
+//     // if(!n && typeof x == "String") return console.log("N Is Not Correct...");
+
+//     for(let outer = 0; outer < n; outer++){
+//         let row = "";
+//         for(let middel = 0; middel < (n-outer); middel++){
+//           row = row + " "
+//         }
+//         for(let inner = 0; inner <= outer; inner++){
+//           row = row + "*"
+//         }
+//         console.log(row)
+//     }
+//   }
+  
+
+//   check(5)
+
+
+
+    function check(n) {
+    // if(!n && typeof x == "String") return console.log("N Is Not Correct...");
+
+    for(let outer = 0; outer < n; outer++){
+        let row = "";
+        for(let middel = 0; middel < (n-outer); middel++){
+          row = row + " "
+        }
+        for(let inner = 0; inner <= outer; inner++){
+          row = row + "*"
+        }
+        console.log(row)
     }
-    // console.log("*")
-}
+  }
+  
+
+  check(5)

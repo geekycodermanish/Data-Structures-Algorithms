@@ -265,20 +265,19 @@
 
 
 
-    function check(n) {
-    // if(!n && typeof x == "String") return console.log("N Is Not Correct...");
+  function check(num) {
+    if(!num ) return 0;
 
-    for(let outer = 0; outer < n; outer++){
-        let row = "";
-        for(let middel = 0; middel < (n-outer); middel++){
-          row = row + " "
-        }
-        for(let inner = 0; inner <= outer; inner++){
-          row = row + "*"
-        }
-        console.log(row)
+    let target = num;
+    let index = 0;
+
+    while(target > 0){
+      target = Math.trunc(target/10)
+      index++
     }
+      return index;
+    
   }
   
 
-  check(5)
+  console.log(check(123456789))

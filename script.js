@@ -264,15 +264,15 @@
 //   check(5)
 
 
-
+//find the length of the number.....
   function check(num) {
     if(!num ) return 0;
+    if(num == 0) return 1
+    if(num < 0) num = ~~num
 
-    let target = num;
     let index = 0;
-
-    while(target > 0){
-      target = Math.trunc(target/10)
+    while(num > 0){
+      num = Math.trunc(num/10)
       index++
     }
       return index;
@@ -280,4 +280,4 @@
   }
   
 
-  console.log(check(123456789))
+  console.log(check(-10))

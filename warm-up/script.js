@@ -285,20 +285,39 @@
 
 
 // ------- palindrome challenge
-  function check(n) {
-    if(!n) return false;
-    if(n < 0) n = n * -1
+  // function check(n) {
+  //   if(!n) return false;
+  //   if(n < 0) n = n * -1
     
-    let reversNum = 0;
-    let currentNum = n
-    // let index = 0;
+  //   let reversNum = 0;
+  //   let currentNum = n
+  //   // let index = 0;
+  //   while(n > 0){
+  //     reversNum = reversNum * 10 + (n % 10)
+  //     n = Math.floor(n/10)
+  //     // index++
+  //   }
+
+  //   return reversNum != currentNum ? false : true
+  // }
+
+  // console.log(check(-212))
+
+
+  //-------------Reverse Integer
+
+  function check (n) {
+    if(!n) return 0;
+    let orignalNum = n;
+
+    if(n < 0) n = n * -1
+    let reverseNum = 0;
     while(n > 0){
-      reversNum = reversNum * 10 + (n % 10)
+      reverseNum = reverseNum * 10 + (n % 10)
       n = Math.floor(n/10)
-      // index++
     }
 
-    return reversNum != currentNum ? false : true
+    return orignalNum < 0 ? -reverseNum : reverseNum
   }
 
-  console.log(check(-212))
+console.log(check(-123))

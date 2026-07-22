@@ -265,19 +265,40 @@
 
 
 //find the length of the number.....
-  function check(num) {
-    if(!num ) return 0;
-    if(num == 0) return 1
-    if(num < 0) num = ~~num
+  // function check(num) {
+  //   if(!num ) return 0;
+  //   if(num == 0) return 1
+  //   if(num < 0) num = num * -1
 
-    let index = 0;
-    while(num > 0){
-      num = Math.trunc(num/10)
-      index++
-    }
-      return index;
+  //   let index = 0;
+  //   while(num > 0){
+  //     num = Math.trunc(num/10)
+  //     index++
+  //   }
+  //     return index;
     
-  }
+  // }
   
 
-  console.log(check(-10))
+  // console.log(check(-10))
+
+
+
+
+  function check(n) {
+    if(!n) return false;
+    if(n < 0) n = n * -1
+    
+    let reversNum = 0;
+    let currentNum = n
+    // let index = 0;
+    while(n > 0){
+      reversNum = reversNum * 10 + (n % 10)
+      n = Math.floor(n/10)
+      // index++
+    }
+
+    return reversNum != currentNum ? false : true
+  }
+
+  console.log(check(-212))

@@ -284,7 +284,7 @@
 
 
 
-
+// ------- palindrome challenge
   function check(n) {
     if(!n) return false;
     if(n < 0) n = n * -1
